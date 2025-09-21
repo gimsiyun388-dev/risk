@@ -7,7 +7,8 @@ app = Flask(__name__)
 api_key = "fxr_live_0e9f7bba09e36d62b800cfea2147bdd6efaf"
 
 @app.route('/main', methods=['GET', 'POST'])
-def rate(): #rate
+def rate():
+    #잭스 버프 에반데
     main = []
     if request.method == 'POST':
         user_base = request.form.get('base', '').strip()
